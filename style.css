@@ -21,7 +21,7 @@ html {
 #partners,
 #consider,
 #contact {
-  scroll-margin-top: 115px;
+  scroll-margin-top: 112px;
 }
 
 body {
@@ -41,21 +41,21 @@ a {
 }
 
 section {
-  padding: 92px 7%;
+  padding: 88px 7%;
 }
 
 .site-header {
   width: 100%;
-  padding: 18px 7%;
+  padding: 16px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   position: sticky;
   top: 0;
   z-index: 1000;
   background: rgba(246, 243, 237, 0.96);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(8, 19, 31, 0.06);
 }
 
@@ -68,15 +68,16 @@ section {
 }
 
 .logo-mark {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(6, 63, 58, 0.16);
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(6, 63, 58, 0.18);
   color: #063f3a;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 19px;
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .logo-text {
@@ -97,12 +98,12 @@ section {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nav-links a {
   color: #08131f;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -115,23 +116,23 @@ section {
   background: #063f3a;
   color: white;
   padding: 13px 18px;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 800;
   white-space: nowrap;
 }
 
 .hero {
-  padding-top: 64px;
-  padding-bottom: 66px;
+  padding-top: 62px;
+  padding-bottom: 70px;
   background:
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 28%),
-    linear-gradient(135deg, #f6f3ed 0%, #ffffff 55%, #edf4f1 100%);
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 30%),
+    linear-gradient(135deg, #f6f3ed 0%, #ffffff 56%, #edf4f1 100%);
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 56px;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 58px;
   align-items: center;
 }
 
@@ -142,7 +143,7 @@ section {
   letter-spacing: 3px;
   font-size: 10px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero-copy h1,
@@ -158,19 +159,19 @@ section {
 .contact-section h2 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  line-height: 1;
+  line-height: 0.98;
   letter-spacing: -1.8px;
 }
 
 .hero-copy h1 {
-  font-size: clamp(3rem, 4.6vw, 5.1rem);
+  font-size: clamp(3.1rem, 4.8vw, 5.4rem);
   max-width: 700px;
   margin-bottom: 26px;
 }
 
 .hero-description {
-  max-width: 640px;
-  font-size: 16.5px;
+  max-width: 620px;
+  font-size: 16px;
   line-height: 1.85;
   color: #5d6975;
   margin-bottom: 34px;
@@ -185,7 +186,7 @@ section {
 .btn-primary,
 .btn-secondary {
   padding: 14px 22px;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 800;
 }
 
@@ -197,12 +198,13 @@ section {
 .btn-secondary {
   border: 1px solid rgba(8, 19, 31, 0.12);
   color: #08131f;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.58);
 }
 
 .hero-image {
-  height: 600px;
+  height: 610px;
   overflow: hidden;
+  box-shadow: 0 34px 80px rgba(8, 19, 31, 0.08);
 }
 
 .hero-image img,
@@ -213,29 +215,30 @@ section {
 }
 
 .proof-row {
-  margin-top: 42px;
+  margin-top: 38px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid rgba(8, 19, 31, 0.08);
+  gap: 14px;
 }
 
 .proof-row div {
-  padding-top: 22px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(8, 19, 31, 0.06);
 }
 
 .proof-row strong {
   display: block;
-  font-size: 27px;
+  font-size: 28px;
   color: #063f3a;
   margin-bottom: 8px;
 }
 
 .proof-row span {
   color: #66717d;
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.55;
   display: block;
-  max-width: 240px;
 }
 
 .promise-section,
@@ -255,7 +258,7 @@ section {
 .program-design-section h2,
 .consider-section h2,
 .contact-section h2 {
-  font-size: clamp(2.5rem, 3.8vw, 4.4rem);
+  font-size: clamp(2.45rem, 3.7vw, 4.25rem);
 }
 
 .promise-copy p,
@@ -266,7 +269,7 @@ section {
 .section-note {
   color: #66717d;
   line-height: 1.85;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .split-heading,
@@ -274,12 +277,12 @@ section {
   display: grid;
   grid-template-columns: 1fr 0.78fr;
   gap: 64px;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .split-heading h2,
 .training-top h2 {
-  font-size: clamp(2.5rem, 3.8vw, 4.5rem);
+  font-size: clamp(2.45rem, 3.7vw, 4.35rem);
 }
 
 .split-heading p:last-child,
@@ -299,9 +302,9 @@ section {
 
 .service-list article {
   display: grid;
-  grid-template-columns: 70px 320px 1fr;
+  grid-template-columns: 70px 310px 1fr;
   gap: 34px;
-  padding: 31px 0;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(8, 19, 31, 0.08);
 }
 
@@ -311,29 +314,31 @@ section {
 }
 
 .service-list h3 {
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.15;
 }
 
 .service-list p {
   color: #66717d;
-  line-height: 1.82;
+  line-height: 1.8;
+  font-size: 15px;
 }
 
 .detail-grid {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin-top: 36px;
+  gap: 12px;
+  margin-top: 34px;
 }
 
 .detail-grid div {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.68);
   border: 1px solid rgba(8, 19, 31, 0.06);
-  padding: 22px;
+  padding: 20px;
   font-weight: 800;
   line-height: 1.45;
+  font-size: 14px;
 }
 
 .section-note {
@@ -354,17 +359,18 @@ section {
 .about-image {
   height: 540px;
   overflow: hidden;
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.16);
 }
 
 .about-copy h2 {
-  font-size: clamp(2.5rem, 3.8vw, 4.4rem);
+  font-size: clamp(2.45rem, 3.7vw, 4.3rem);
   margin-bottom: 24px;
 }
 
 .about-copy p {
   color: rgba(255, 255, 255, 0.74);
   line-height: 1.85;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .about-copy .eyebrow {
@@ -374,17 +380,19 @@ section {
 .quote-line {
   color: white !important;
   font-weight: 800;
+  margin-top: 8px;
 }
 
 .training-feature {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 38px;
+  grid-template-columns: 0.84fr 1.16fr;
+  gap: 36px;
 }
 
 .training-feature img {
-  height: 720px;
+  height: 700px;
   overflow: hidden;
+  box-shadow: 0 28px 70px rgba(8, 19, 31, 0.08);
 }
 
 .program-list {
@@ -392,15 +400,16 @@ section {
   grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid rgba(8, 19, 31, 0.08);
   border-left: 1px solid rgba(8, 19, 31, 0.08);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .program-list span {
-  padding: 16px 18px;
+  padding: 15px 17px;
   border-right: 1px solid rgba(8, 19, 31, 0.08);
   border-bottom: 1px solid rgba(8, 19, 31, 0.08);
   font-weight: 700;
   color: #08131f;
-  font-size: 13.5px;
+  font-size: 13.4px;
   line-height: 1.35;
 }
 
@@ -411,25 +420,26 @@ section {
 .outcome-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 12px;
 }
 
 .outcome-grid div {
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(8, 19, 31, 0.06);
-  padding: 22px;
+  padding: 20px;
   font-weight: 800;
-  line-height: 1.5;
+  line-height: 1.45;
+  font-size: 14px;
 }
 
 .coaching-copy ul {
   list-style: none;
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .coaching-copy li {
-  padding: 16px 0;
+  padding: 15px 0;
   border-bottom: 1px solid rgba(8, 19, 31, 0.08);
   font-weight: 800;
 }
@@ -442,7 +452,7 @@ section {
 
 .why-section blockquote {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 4.3vw, 4.8rem);
+  font-size: clamp(3rem, 4.2vw, 4.7rem);
   line-height: 1.05;
   margin-bottom: 24px;
 }
@@ -450,8 +460,8 @@ section {
 .why-section p {
   color: #66717d;
   line-height: 1.85;
-  font-size: 16.5px;
-  margin-bottom: 16px;
+  font-size: 16px;
+  margin-bottom: 14px;
 }
 
 /* ========================= */
@@ -466,7 +476,7 @@ section {
 
 .section-kicker h2 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-size: clamp(2rem, 3vw, 3.1rem);
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -477,15 +487,14 @@ section {
   justify-content: center;
   align-items: center;
 
-  gap: 28px 36px;
-
+  gap: 24px 34px;
   margin-top: 34px;
 }
 
 .partner-logo,
 .partner-name {
-  width: 96px;
-  height: 42px;
+  width: 86px;
+  height: 38px;
 
   display: flex;
   align-items: center;
@@ -495,9 +504,10 @@ section {
   text-align: center;
 }
 
-.partner-logo img {
-  width: 96px;
-  height: 42px;
+.partner-logo img,
+.partner-name img {
+  width: 86px;
+  height: 38px;
 
   object-fit: contain;
   object-position: center;
@@ -508,7 +518,7 @@ section {
 .partner-name {
   color: #25313d;
   font-weight: 800;
-  font-size: 10.5px;
+  font-size: 10px;
   line-height: 1.15;
 }
 
@@ -527,6 +537,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  box-shadow: 0 28px 70px rgba(8, 19, 31, 0.12);
 }
 
 .contact-card span {
@@ -577,12 +588,12 @@ section {
 
 @media (max-width: 1280px) {
   .nav-links {
-    gap: 14px;
+    gap: 13px;
   }
 
   .nav-links a,
   .nav-cta {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 }
 
@@ -619,7 +630,7 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 72px 24px;
+    padding: 70px 24px;
   }
 
   .site-header {
@@ -648,14 +659,14 @@ section {
   .coaching-section h2,
   .contact-section h2,
   .why-section blockquote {
-    font-size: 2.75rem;
+    font-size: 2.7rem;
     letter-spacing: -1.2px;
   }
 
   .hero-image,
   .about-image,
   .training-feature img {
-    height: 390px;
+    height: 380px;
   }
 
   .proof-row,
@@ -666,22 +677,19 @@ section {
   }
 
   .partner-logos {
-    gap: 22px 26px;
+    gap: 20px 24px;
   }
 
   .partner-logo,
   .partner-name {
-    width: 76px;
-    height: 34px;
+    width: 70px;
+    height: 31px;
   }
 
-  .partner-logo img {
-    width: 76px;
-    height: 34px;
-  }
-
-  .partner-name {
-    font-size: 9.5px;
+  .partner-logo img,
+  .partner-name img {
+    width: 70px;
+    height: 31px;
   }
 
   .contact-section {
