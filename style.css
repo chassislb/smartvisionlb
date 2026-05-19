@@ -1051,3 +1051,240 @@ section,
     text-align: center;
   }
 }
+
+/* ADD THIS AT THE VERY BOTTOM OF YOUR CSS */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle, rgba(15,118,110,0.10) 0%, transparent 72%);
+  top: -220px;
+  right: -120px;
+  pointer-events: none;
+}
+
+.hero-copy h1 {
+  max-width: 920px;
+  text-wrap: balance;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-description {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.hero-image {
+  border-radius: 2px;
+}
+
+.hero-image img {
+  transition: transform 1.4s ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.06);
+}
+
+.proof-row div {
+  backdrop-filter: blur(14px);
+}
+
+.proof-row div strong {
+  font-size: 36px;
+}
+
+.service-list article {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-list article::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(to right, #0f766e, #062f2b);
+  transition: width 0.45s ease;
+}
+
+.service-list article:hover::before {
+  width: 100%;
+}
+
+.service-list article:hover {
+  transform: translateY(-7px);
+}
+
+.service-list h3 {
+  font-size: 24px;
+}
+
+.service-list p {
+  line-height: 1.85;
+}
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: "SMART";
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  font-size: 13vw;
+  font-weight: 900;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: -10px;
+  pointer-events: none;
+}
+
+.about-copy h2 {
+  max-width: 700px;
+}
+
+.detail-grid div,
+.outcome-grid div,
+.why-card,
+.contact-points div {
+  border-radius: 2px;
+}
+
+.detail-grid div:hover,
+.outcome-grid div:hover,
+.why-card:hover,
+.contact-points div:hover {
+  transform: translateY(-5px);
+}
+
+.program-list span {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+}
+
+.program-list span:hover {
+  transform: scale(1.02);
+}
+
+.partner-logo,
+.partner-name {
+  opacity: 0.76;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.partner-logo:hover,
+.partner-name:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.contact-card {
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.05),
+      transparent 40%
+    );
+  pointer-events: none;
+}
+
+.contact-card a {
+  transition: opacity 0.25s ease;
+}
+
+.contact-card a:hover {
+  opacity: 0.72;
+}
+
+.site-footer {
+  backdrop-filter: blur(10px);
+}
+
+.site-footer strong {
+  font-size: 18px;
+}
+
+.site-footer p {
+  margin-top: 4px;
+}
+
+section {
+  position: relative;
+}
+
+.reveal-active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+
+  .hero-copy h1 {
+    font-size: 2.9rem;
+    line-height: 0.98;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .proof-row div strong {
+    font-size: 30px;
+  }
+
+  .service-list h3 {
+    font-size: 22px;
+  }
+
+  .program-list span {
+    min-height: auto;
+  }
+
+  .contact-section {
+    gap: 36px;
+  }
+
+  .contact-card {
+    padding: 28px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .hero-copy h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 16px 18px;
+  }
+
+}
