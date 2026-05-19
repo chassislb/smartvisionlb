@@ -8,6 +8,22 @@ html {
   scroll-behavior: smooth;
 }
 
+#home,
+#about,
+#promise,
+#team,
+#services,
+#hr-consultancy,
+#training,
+#program-design,
+#coaching,
+#why,
+#partners,
+#consider,
+#contact {
+  scroll-margin-top: 115px;
+}
+
 body {
   background: #f6f3ed;
   color: #08131f;
@@ -25,44 +41,40 @@ a {
 }
 
 section {
-  padding: 110px 7%;
+  padding: 92px 7%;
 }
 
 .site-header {
   width: 100%;
-  padding: 24px 7%;
+  padding: 18px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  background: rgba(246, 243, 237, 0.92);
+  background: rgba(246, 243, 237, 0.96);
   backdrop-filter: blur(14px);
-
   border-bottom: 1px solid rgba(8, 19, 31, 0.06);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   color: #08131f;
+  flex-shrink: 0;
 }
 
 .logo-mark {
-  width: 54px;
-  height: 54px;
-
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(6, 63, 58, 0.16);
+  color: #063f3a;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 1px solid rgba(6, 63, 58, 0.12);
-
-  color: #063f3a;
   font-weight: 800;
   font-size: 20px;
 }
@@ -73,7 +85,7 @@ section {
 }
 
 .logo-text strong {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -85,14 +97,14 @@ section {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 20px;
 }
 
 .nav-links a {
   color: #08131f;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.2s ease;
+  font-size: 12.5px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -102,23 +114,15 @@ section {
 .nav-cta {
   background: #063f3a;
   color: white;
-
-  padding: 16px 24px;
-
-  font-size: 14px;
-  font-weight: 700;
-
-  transition: 0.25s ease;
-}
-
-.nav-cta:hover {
-  background: #0f766e;
+  padding: 13px 18px;
+  font-size: 12.5px;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .hero {
-  padding-top: 70px;
-  padding-bottom: 80px;
-
+  padding-top: 64px;
+  padding-bottom: 66px;
   background:
     radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 28%),
     linear-gradient(135deg, #f6f3ed 0%, #ffffff 55%, #edf4f1 100%);
@@ -127,62 +131,62 @@ section {
 .hero-grid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
-  gap: 70px;
+  gap: 56px;
   align-items: center;
 }
 
-.eyebrow {
+.eyebrow,
+.small-label {
   color: #0f766e;
-
   text-transform: uppercase;
-  letter-spacing: 4px;
-
-  font-size: 11px;
+  letter-spacing: 3px;
+  font-size: 10px;
   font-weight: 800;
+  margin-bottom: 20px;
+}
 
-  margin-bottom: 24px;
+.hero-copy h1,
+.split-heading h2,
+.promise-section h2,
+.team-section h2,
+.hr-section h2,
+.program-design-section h2,
+.consider-section h2,
+.about-copy h2,
+.training-top h2,
+.coaching-section h2,
+.contact-section h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1.8px;
 }
 
 .hero-copy h1 {
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(3.2rem, 5vw, 5.8rem);
-  line-height: 0.95;
-
-  letter-spacing: -2.5px;
-  font-weight: 600;
-
-  max-width: 620px;
-
-  margin-bottom: 28px;
+  font-size: clamp(3rem, 4.6vw, 5.1rem);
+  max-width: 700px;
+  margin-bottom: 26px;
 }
 
 .hero-description {
-  max-width: 560px;
-
-  font-size: 17px;
-  line-height: 1.9;
-
+  max-width: 640px;
+  font-size: 16.5px;
+  line-height: 1.85;
   color: #5d6975;
-
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .hero-actions {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 .btn-primary,
 .btn-secondary {
-  padding: 16px 24px;
-
-  font-size: 14px;
-  font-weight: 700;
-
-  transition: 0.25s ease;
+  padding: 14px 22px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .btn-primary {
@@ -190,130 +194,103 @@ section {
   color: white;
 }
 
-.btn-primary:hover {
-  background: #0f766e;
-}
-
 .btn-secondary {
-  border: 1px solid rgba(8, 19, 31, 0.1);
-
+  border: 1px solid rgba(8, 19, 31, 0.12);
   color: #08131f;
-
-  background: rgba(255,255,255,0.5);
-}
-
-.btn-secondary:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .hero-image {
-  height: 720px;
+  height: 600px;
   overflow: hidden;
 }
 
-.hero-image img {
-  width: 100%;
+.hero-image img,
+.about-image img,
+.training-feature img {
   height: 100%;
   object-fit: cover;
 }
 
 .proof-row {
-  margin-top: 54px;
-
+  margin-top: 42px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   border-top: 1px solid rgba(8, 19, 31, 0.08);
 }
 
 .proof-row div {
-  padding-top: 28px;
+  padding-top: 22px;
 }
 
 .proof-row strong {
   display: block;
-
-  font-size: 30px;
-  font-weight: 800;
-
+  font-size: 27px;
   color: #063f3a;
-
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .proof-row span {
   color: #66717d;
-
-  font-size: 14px;
-  line-height: 1.6;
-
-  max-width: 220px;
-
+  font-size: 13.5px;
+  line-height: 1.55;
   display: block;
+  max-width: 240px;
 }
 
-.partners-section {
-  padding-top: 42px;
-  padding-bottom: 42px;
-
-  border-top: 1px solid rgba(8, 19, 31, 0.06);
-  border-bottom: 1px solid rgba(8, 19, 31, 0.06);
-
-  background: rgba(255,255,255,0.55);
-}
-
-.small-label {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  color: #66717d;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  margin-bottom: 24px;
-}
-
-.partner-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 42px;
-}
-
-.partner-logos span {
-  font-size: 22px;
-  font-weight: 800;
-
-  color: #08131f;
-
-  opacity: 0.45;
-}
-
-.split-heading {
+.promise-section,
+.coaching-section,
+.hr-section,
+.program-design-section,
+.consider-section {
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: 70px;
-
-  margin-bottom: 70px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
 }
 
-.split-heading h2 {
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(2.6rem, 4vw, 4.7rem);
-  line-height: 1;
-
-  letter-spacing: -2px;
-  font-weight: 600;
+.promise-section h2,
+.coaching-section h2,
+.hr-section h2,
+.program-design-section h2,
+.consider-section h2,
+.contact-section h2 {
+  font-size: clamp(2.5rem, 3.8vw, 4.4rem);
 }
 
-.split-heading p:last-child {
+.promise-copy p,
+.coaching-copy p,
+.program-design-copy p,
+.consider-copy p,
+.contact-section p,
+.section-note {
   color: #66717d;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
 
-  line-height: 1.9;
-  font-size: 16px;
+.split-heading,
+.training-top {
+  display: grid;
+  grid-template-columns: 1fr 0.78fr;
+  gap: 64px;
+  margin-bottom: 54px;
+}
 
+.split-heading h2,
+.training-top h2 {
+  font-size: clamp(2.5rem, 3.8vw, 4.5rem);
+}
+
+.split-heading p:last-child,
+.training-top p:last-child {
+  color: #66717d;
+  line-height: 1.85;
   align-self: end;
+}
+
+.team-section {
+  background: #f1ede5;
 }
 
 .service-list {
@@ -322,213 +299,244 @@ section {
 
 .service-list article {
   display: grid;
-  grid-template-columns: 100px 320px 1fr;
-
-  gap: 36px;
-
-  padding: 36px 0;
-
+  grid-template-columns: 70px 320px 1fr;
+  gap: 34px;
+  padding: 31px 0;
   border-bottom: 1px solid rgba(8, 19, 31, 0.08);
 }
 
 .service-list span {
   color: #0f766e;
-  font-size: 14px;
   font-weight: 800;
 }
 
 .service-list h3 {
-  font-size: 28px;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 1.15;
 }
 
 .service-list p {
   color: #66717d;
-  line-height: 1.9;
+  line-height: 1.82;
+}
+
+.detail-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.detail-grid div {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(8, 19, 31, 0.06);
+  padding: 22px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.section-note {
+  grid-column: 1 / -1;
+  max-width: 980px;
+  margin-top: 22px;
 }
 
 .about-section {
+  background: #08211f;
+  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 64px;
   align-items: center;
-
-  background: #08211f;
 }
 
 .about-image {
-  height: 620px;
+  height: 540px;
   overflow: hidden;
 }
 
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .about-copy h2 {
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(2.8rem, 4vw, 4.8rem);
-  line-height: 1;
-
-  color: white;
-
-  margin-bottom: 28px;
-}
-
-.about-copy p {
-  color: rgba(255,255,255,0.72);
-
-  line-height: 1.95;
+  font-size: clamp(2.5rem, 3.8vw, 4.4rem);
   margin-bottom: 24px;
 }
 
+.about-copy p {
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
 .about-copy .eyebrow {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.62);
 }
 
-.training-top {
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  gap: 70px;
-
-  margin-bottom: 56px;
-}
-
-.training-top h2 {
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(2.6rem, 4vw, 4.7rem);
-  line-height: 1;
-
-  letter-spacing: -2px;
-}
-
-.training-top p:last-child {
-  color: #66717d;
-
-  line-height: 1.9;
-
-  align-self: end;
+.quote-line {
+  color: white !important;
+  font-weight: 800;
 }
 
 .training-feature {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 36px;
-  align-items: stretch;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 38px;
 }
 
 .training-feature img {
-  height: 580px;
-  object-fit: cover;
+  height: 720px;
+  overflow: hidden;
 }
 
 .program-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(8, 19, 31, 0.08);
   border-left: 1px solid rgba(8, 19, 31, 0.08);
-
-  padding-left: 42px;
 }
 
 .program-list span {
-  padding: 22px 0;
-
+  padding: 16px 18px;
+  border-right: 1px solid rgba(8, 19, 31, 0.08);
   border-bottom: 1px solid rgba(8, 19, 31, 0.08);
-
-  font-size: 18px;
   font-weight: 700;
+  color: #08131f;
+  font-size: 13.5px;
+  line-height: 1.35;
 }
 
-.philosophy-section {
+.outcomes-section {
+  background: #f1ede5;
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.outcome-grid div {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(8, 19, 31, 0.06);
+  padding: 22px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.coaching-copy ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.coaching-copy li {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(8, 19, 31, 0.08);
+  font-weight: 800;
+}
+
+.why-section {
   text-align: center;
-  max-width: 920px;
+  max-width: 1040px;
   margin: auto;
 }
 
-.philosophy-section blockquote {
+.why-section blockquote {
   font-family: "Playfair Display", serif;
-
-  font-size: clamp(3rem, 4.5vw, 5rem);
+  font-size: clamp(3rem, 4.3vw, 4.8rem);
   line-height: 1.05;
-
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
-.philosophy-section p {
+.why-section p {
   color: #66717d;
+  line-height: 1.85;
+  font-size: 16.5px;
+  margin-bottom: 16px;
+}
 
-  line-height: 1.9;
-  font-size: 17px;
+.partners-section {
+  background: rgba(255, 255, 255, 0.58);
+  border-top: 1px solid rgba(8, 19, 31, 0.06);
+  border-bottom: 1px solid rgba(8, 19, 31, 0.06);
+}
+
+.section-kicker h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.partner-logo,
+.partner-name {
+  min-height: 86px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(8, 19, 31, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.partner-logo img {
+  max-width: 92px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-name {
+  color: #25313d;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .contact-section {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 70px;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
   align-items: center;
-}
-
-.contact-section h2 {
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(2.8rem, 4vw, 4.8rem);
-  line-height: 1;
-
-  margin-bottom: 24px;
-}
-
-.contact-section p {
-  color: #66717d;
-  line-height: 1.9;
 }
 
 .contact-card {
   background: #063f3a;
-
-  padding: 48px;
-
+  padding: 42px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .contact-card span {
-  color: rgba(255,255,255,0.55);
-
+  color: rgba(255, 255, 255, 0.58);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-
   margin-top: 8px;
 }
 
 .contact-card a,
 .contact-card p {
   color: white;
-
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.6;
 }
 
 .site-footer {
-  padding: 34px 7%;
-
+  padding: 32px 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   border-top: 1px solid rgba(8, 19, 31, 0.06);
-}
-
-.site-footer strong {
-  display: block;
-  margin-bottom: 4px;
 }
 
 .site-footer p {
@@ -542,7 +550,6 @@ section {
 
 .footer-right small {
   color: #66717d;
-
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -550,42 +557,60 @@ section {
 
 .footer-right small a {
   color: #063f3a;
-
   border-bottom: 1px solid #063f3a;
-
   font-weight: 800;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
+  .nav-links {
+    gap: 14px;
+  }
 
+  .nav-links a,
+  .nav-cta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
   .hero-grid,
   .split-heading,
+  .promise-section,
   .about-section,
   .training-top,
   .training-feature,
+  .coaching-section,
+  .hr-section,
+  .program-design-section,
+  .consider-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
 
-  .proof-row {
+  .proof-row,
+  .partner-logos,
+  .outcome-grid,
+  .detail-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
   }
 
   .service-list article {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 16px;
+  }
+
+  .training-feature img {
+    height: 440px;
   }
 }
 
 @media (max-width: 768px) {
-
   section {
-    padding: 82px 24px;
+    padding: 72px 24px;
   }
 
   .site-header {
-    padding: 20px 24px;
+    padding: 18px 24px;
     flex-direction: column;
   }
 
@@ -600,33 +625,50 @@ section {
 
   .hero-copy h1,
   .split-heading h2,
+  .promise-section h2,
+  .team-section h2,
+  .hr-section h2,
+  .program-design-section h2,
+  .consider-section h2,
   .about-copy h2,
   .training-top h2,
+  .coaching-section h2,
   .contact-section h2,
-  .philosophy-section blockquote {
-    font-size: 3.2rem;
-    letter-spacing: -1.5px;
+  .why-section blockquote {
+    font-size: 2.75rem;
+    letter-spacing: -1.2px;
   }
 
-  .hero-image {
-    height: 500px;
-  }
-
-  .about-image {
-    height: 420px;
-  }
-
+  .hero-image,
+  .about-image,
   .training-feature img {
-    height: 420px;
+    height: 390px;
   }
 
-  .proof-row {
+  .proof-row,
+  .partner-logos,
+  .program-list,
+  .outcome-grid,
+  .detail-grid {
     grid-template-columns: 1fr;
   }
 
-  .program-list {
-    border-left: none;
-    padding-left: 0;
+  .partner-logo,
+  .partner-name {
+    min-height: 78px;
+  }
+
+  .partner-logo img {
+    max-width: 86px;
+    max-height: 38px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 32px;
   }
 
   .site-footer {
